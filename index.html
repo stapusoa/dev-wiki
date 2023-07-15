@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <title>Creating a React App</title>
+    
   </head>
   <body>
     <div class="container">
@@ -10,9 +11,9 @@
         <div class="logo">
           <img src="https://stapusoa.github.io/uxportfolio/logo.svg" alt="Logo">
         </div>
-        <header class="dashboard">Learn to code</header>
+        <a href="#home" class="home">Learn to code</a>
         <ul>
-          <li class="nav-li"><a href="#create_a_new_app" class="nav-link">Create a New App</a></li>
+          <li class="nav-li"><a href="#create_a_simple_webpage" class="nav-link">Create a Simple Webpage</a></li>
           <li class="nav-li"><a href="#folder_structure" class="nav-link">Folder Structure</a></li>
           <li class="nav-li"><a href="#writing_markup_with_jsx" class="nav-link">Writing Markup with JSX</a></li>
           <li class="nav-li"><a href="#adding_styles" class="nav-link">Adding Styles</a></li>
@@ -21,12 +22,65 @@
       </nav>
 
       <main class="content" id="main-doc">
-        <section class="main-section" id="create_a_new_app">
-          <header>Create a New App</header>
-          <p>These are instructions for designers who want to learn web development and React. Below are simple steps to creating your first React app.</p>
-          <p>Your app only needs one build dependency. We test Create React App to make sure that all of its underlying pieces work together seamlessly – no complicated version mismatches.</p>
+        <div id="home">
+          <header>
+            <h1>UX Development Wiki</h1>
+          </header>
+          <p>Welcome to the UX Development Wiki! This is a reference for those who are noobs to development. Processes, setup guides, and other information regarding UX development will be explained here.</p>
+          <p>This wiki will:</p>
+          <ol>
+            <li>
+              <p>Explain how to create a simple webpage using html and css.</p>
+            </li>
+            <li>
+              <p>Define Frameworks and Libraries.</p>
+            </li>
+            <li>
+              <p>Provide instructions on creating a site or app using a Framework.</p>
+            </li>
+            <li>
+              <p>Review best practices for naming conventions and file structuring.</p>
+            </li>
+            <li>
+              <p>Review how to use a terminal using Bash.</p>
+            </li>
+            <li>
+              <p>Provide solutions to common errors when you might be in need of troubleshooting.</p>
+            </li>
+            <li>
+              <p>Explain how to use Github and deploy a project.</p>
+              <pre class="block-code">
+                <code class="block-code-text">
+                  <p>
+                    &lt;html&gt;
+                      &lt;head&gt;
+                        &lt;title&gt;Hello World!&lt;/title&gt;
+                      &lt;/head&gt;
+                    &lt;/html&gt;
+                  </p>
+                </code>
+              </pre>
+            </li>
+          </ol>
+
+        </div>
+        <div id="create_a_simple_webpage">
+          <header>Create a Simple Webpage</header>
+          <p>Creating an attractive page will be difficult for those who are not experts in CSS. Without using CSS, you will not be able to make the web page, more attractive. So in order to make a web page, we need to have a knowledge of HTML and CSS. In this article, the main focus will be implementing CSS. In order to design a web page we need to first create an HTML web structure.</p>
+          <p>HTML (Hypertext Markup Language) is the standard markup language which creates web pages. CSS (Cascading Style Sheets) describes how HTML elements should look.</p>
           <h3>Get started</h3>
-          <p>Whether you’re using React or another library, Create React App lets you focus on code, not build tools.</p>
+          <p>Follow these steps to build a simple webpage.</p>
+          <ol>
+            <li>
+              <p>Open any text editor such as Notepad (on Windows), TextEdit (on Mac). You may also use online editors such as WebStorm, Repl, or an IDE like Visual Studio Code.</p>
+            </li>
+            <li>
+              <p>Create a new file and save it as index.html. Make sure the extension of the file is .html while saving the file.</p>
+            </li>
+            <li>
+              <p>Add the following code to your index.html</p>
+            </li>
+          </ol>
           <p>To create a project called my-app, run this command:</p>
           <code>npx create-react-app my-app</code>
           <h3>Update React</h3>
@@ -85,32 +139,33 @@ yarn create react-app my-app</code>
    
 
 
-        </section>
-        <section class="main-section" id="folder_structure">
+        </div>
+        <div id="folder_structure">
           <header>Folder Structure</header>
           <p>
             The markup syntax you’ve seen above is called JSX. It is optional, but most React projects use JSX for its convenience. All of the tools we recommend for local development support JSX out of the box.
           </p>
-        </section>
-        <section class="main-section" id="writing_markup_with_jsx">
+        </div>
+        <div id="writing_markup_with_jsx">
           <header>Writing Markup with JSX</header>
           <p>
             The markup syntax you’ve seen above is called JSX. It is optional, but most React projects use JSX for its convenience. All of the tools we recommend for local development support JSX out of the box.
           </p>
-        </section>
-        <section class="main-section" id="adding_styles">
+        </div>
+        <div id="adding_styles">
           <header>Adding Styles</header>
           <p>
             In React, you specify a CSS class with className. It works the same way as the HTML class attribute.
           </p>
-        </section>
-        <section class="main-section" id="updating_the_screen">
+        </div>
+        <div id="updating_the_screen">
           <header>Updating the Screen</header>
           <p>
             Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
           </p>
-        </section>
+        </div>
       </main>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
