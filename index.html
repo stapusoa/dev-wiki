@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Creating a React App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar" class="sidebar">
+        <div class="logo">
+          <img src="https://stapusoa.github.io/uxportfolio/logo.svg" alt="Logo">
+        </div>
+        <header class="dashboard">Learn to code</header>
+        <ul>
+          <li class="nav-li"><a href="#create_a_new_app" class="nav-link">Create a New App</a></li>
+          <li class="nav-li"><a href="#folder_structure" class="nav-link">Folder Structure</a></li>
+          <li class="nav-li"><a href="#writing_markup_with_jsx" class="nav-link">Writing Markup with JSX</a></li>
+          <li class="nav-li"><a href="#adding_styles" class="nav-link">Adding Styles</a></li>
+          <li class="nav-li"><a href="#updating_the_screen" class="nav-link">Updating the Screen</a></li>
+        </ul>
+      </nav>
+
+      <main class="content" id="main-doc">
+        <section class="main-section" id="create_a_new_app">
+          <header>Create a New App</header>
+          <p>These are instructions for designers who want to learn web development and React. Below are simple steps to creating your first React app.</p>
+          <p>Your app only needs one build dependency. We test Create React App to make sure that all of its underlying pieces work together seamlessly – no complicated version mismatches.</p>
+          <h3>Get started</h3>
+          <p>Whether you’re using React or another library, Create React App lets you focus on code, not build tools.</p>
+          <p>To create a project called my-app, run this command:</p>
+          <code>npx create-react-app my-app</code>
+          <h3>Update React</h3>
+          <p>Updating your build tooling is typically a daunting and time-consuming task. When new versions of Create React App are released, you can upgrade using a single command:</p>
+          <code>npm install react-scripts@latest</code>
+          <h3>Select packaging manager</h3>
+          <p>When you create a new app, the CLI will use npm or Yarn to install dependencies, depending on which tool you use to run create-react-app. For example:</p>
+          <code># Run this to use npm
+npx create-react-app my-app
+# Or run this to use yarn
+yarn create react-app my-app</code>
+<p>
+          To install React and MUI, you will need to use Node.js and its package manager, npm. Here are the steps you can follow:
+        </p>
+        <ol>
+          <li>
+            Install Node.js: Visit the Node.js website (https://nodejs.org) and download and install the version that corresponds to your operating system. You will have to restart your computer.
+          </li>
+          <li>
+            Install npm and npx.
+            <code>
+              npm install -g npm
+            </code>
+          <li>
+            Create a new React app: Open a terminal and run the following command: npx create-react-app my-app
+          </li>
+          <li>
+            Navigate to the directory of your React app
+          </li>
+          <li>
+            Install React and start the server.
+          </li>
+          <p>
+            This will automatically open http://localhost:3000 in your default browser, and you will see your React app.
+          </p>
+          <p>
+            Start building your app: Open the project in your preferred code editor and start modifying the source files. The entry point of your app is src/index.js, and you can create new components in the src directory.
+          </p>
+          <p>Navigate to the directory of your React app by running:</p>
+          <ol>
+            <li>
+              <code>cd my-app</code>
+            </li>
+              <ol>
+                <li>
+                  Navigate back a directory:
+                  <code>cd ..</code>
+                </li>
+                <li>
+                  Navigate forward:
+                  <code>cd {next directory}</code>
+                </li>
+              </ol>
+          </ol>
+                  
+   
+
+
+        </section>
+        <section class="main-section" id="folder_structure">
+          <header>Folder Structure</header>
+          <p>
+            The markup syntax you’ve seen above is called JSX. It is optional, but most React projects use JSX for its convenience. All of the tools we recommend for local development support JSX out of the box.
+          </p>
+        </section>
+        <section class="main-section" id="writing_markup_with_jsx">
+          <header>Writing Markup with JSX</header>
+          <p>
+            The markup syntax you’ve seen above is called JSX. It is optional, but most React projects use JSX for its convenience. All of the tools we recommend for local development support JSX out of the box.
+          </p>
+        </section>
+        <section class="main-section" id="adding_styles">
+          <header>Adding Styles</header>
+          <p>
+            In React, you specify a CSS class with className. It works the same way as the HTML class attribute.
+          </p>
+        </section>
+        <section class="main-section" id="updating_the_screen">
+          <header>Updating the Screen</header>
+          <p>
+            Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
