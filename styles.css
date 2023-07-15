@@ -1,93 +1,104 @@
 @media (max-width: 4000px) {
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-    
-    .container {
-      display: flex;
-    }
-    
-    .sidebar {
-      background-color: white;
-      color: black;
-      border-right: 1px solid black;
-      width: 220px;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .dashboard {
-      font-family: "Open Sans", Arial, sans-serif;
-      font-size: 16px;
-      padding: 24px;
-    }
-    .logo {
-      margin-top: 20px;
-      max-width: 24px;
-      width: 24px;
-    }
-    
-    .logo img {
-      max-width: 24px;
-      width: 24px;
-    }
-    
-    .nav-link {
-      list-style: none;
-      margin-top: 40px;
-      text-decoration: none;
-      padding: 0;
-    }
-    
-    .nav-li {
-      list-style: none;
-      text-decoration: none;
-      margin-top: 24px;
-      padding: 0;
-    }
-    .nav-link li {
-      margin-bottom: 16px;
-      list-style: none;
-      text-decoration: none;
-      padding: 0;
-    }
-    
-    .nav-link a {
-      color: black;
-      list-style: none;
-      text-decoration: none;
-      font-family: "Open Sans", Arial, sans-serif;
-      font-size: 16px;
-      padding: 0;
-    }
-    
-    ul {
-      padding: 0;
-      margin: 0;
-    }
-    .content {
-      flex-grow: 1;
-      padding: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 80%;
-    }
-    
-    .main-section {
-      display: none;
-      max-width: 80%;
-    }
-    
-    .main-section:target {
-      display: block;
-      max-width: 80%;
-    }
-    
-    header {
-      font-family: sans-serif;
-      font-size: 32px;
-    }
-    }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .sidebar {
+    background-color: white;
+    color: black;
+    border-right: 1px solid black;
+    width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    padding: 24px;
+  }
+  .logo {
+    margin-top: 20px;
+    max-width: 24px;
+    width: 24px;
+  }
+
+  .logo img {
+    max-width: 24px;
+    width: 24px;
+  }
+
+  .nav-link {
+    list-style: none;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  .nav-li {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 24px;
+    padding: 0;
+  }
+  .nav-link li {
+    margin-bottom: 16px;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  .nav-link a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  header {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  h1 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .block-code {
+    display: block;
+    background-color: #EEEEEE;
+    padding: 24px;
+  }
+
+  .block-code-text {
+    color: black;
+  }
+
+  /* Add this CSS rule to hide all section content by default */
+  .content > div {
+    display: none;
+  }
+
+  /* Add this CSS rule to show the home section content by default */
+  .content > div:first-child {
+    display: block;
+  }
+}
