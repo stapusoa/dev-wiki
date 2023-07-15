@@ -1,171 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Creating a React App</title>
-    
-  </head>
-  <body>
-    <div class="container">
-      <nav id="navbar" class="sidebar">
-        <div class="logo">
-          <img src="https://stapusoa.github.io/uxportfolio/logo.svg" alt="Logo">
-        </div>
-        <a href="#home" class="home">Learn to code</a>
-        <ul>
-          <li class="nav-li"><a href="#create_a_simple_webpage" class="nav-link">Create a Simple Webpage</a></li>
-          <li class="nav-li"><a href="#folder_structure" class="nav-link">Folder Structure</a></li>
-          <li class="nav-li"><a href="#writing_markup_with_jsx" class="nav-link">Writing Markup with JSX</a></li>
-          <li class="nav-li"><a href="#adding_styles" class="nav-link">Adding Styles</a></li>
-          <li class="nav-li"><a href="#updating_the_screen" class="nav-link">Updating the Screen</a></li>
-        </ul>
-      </nav>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<title>Creating a React App</title>
+</head>
+<body>
 
-      <main class="content" id="main-doc">
-        <div id="home">
-          <header>
-            <h1>UX Development Wiki</h1>
-          </header>
-          <p>Welcome to the UX Development Wiki! This is a reference for those who are noobs to development. Processes, setup guides, and other information regarding UX development will be explained here.</p>
-          <p>This wiki will:</p>
-          <ol>
-            <li>
-              <p>Explain how to create a simple webpage using html and css.</p>
-            </li>
-            <li>
-              <p>Define Frameworks and Libraries.</p>
-            </li>
-            <li>
-              <p>Provide instructions on creating a site or app using a Framework.</p>
-            </li>
-            <li>
-              <p>Review best practices for naming conventions and file structuring.</p>
-            </li>
-            <li>
-              <p>Review how to use a terminal using Bash.</p>
-            </li>
-            <li>
-              <p>Provide solutions to common errors when you might be in need of troubleshooting.</p>
-            </li>
-            <li>
-              <p>Explain how to use Github and deploy a project.</p>
-              <pre class="block-code">
-                <code class="block-code-text">
-                  <p>
-                    &lt;html&gt;
-                      &lt;head&gt;
-                        &lt;title&gt;Hello World!&lt;/title&gt;
-                      &lt;/head&gt;
-                    &lt;/html&gt;
-                  </p>
-                </code>
-              </pre>
-            </li>
-          </ol>
+<div class="sidenav">
+    <header>UI Dev Wiki</header>
+    <a href="#introduction">Introduction</a>
+    <a href="#getting_started">Getting Started</a>
+    <a href="#your_first_website">Your First Website</a>
+    <a href="#resources">Resources</a>
+</div>
 
-        </div>
-        <div id="create_a_simple_webpage">
-          <header>Create a Simple Webpage</header>
-          <p>Creating an attractive page will be difficult for those who are not experts in CSS. Without using CSS, you will not be able to make the web page, more attractive. So in order to make a web page, we need to have a knowledge of HTML and CSS. In this article, the main focus will be implementing CSS. In order to design a web page we need to first create an HTML web structure.</p>
-          <p>HTML (Hypertext Markup Language) is the standard markup language which creates web pages. CSS (Cascading Style Sheets) describes how HTML elements should look.</p>
-          <h3>Get started</h3>
-          <p>Follow these steps to build a simple webpage.</p>
-          <ol>
-            <li>
-              <p>Open any text editor such as Notepad (on Windows), TextEdit (on Mac). You may also use online editors such as WebStorm, Repl, or an IDE like Visual Studio Code.</p>
-            </li>
-            <li>
-              <p>Create a new file and save it as index.html. Make sure the extension of the file is .html while saving the file.</p>
-            </li>
-            <li>
-              <p>Add the following code to your index.html</p>
-            </li>
-          </ol>
-          <p>To create a project called my-app, run this command:</p>
-          <code>npx create-react-app my-app</code>
-          <h3>Update React</h3>
-          <p>Updating your build tooling is typically a daunting and time-consuming task. When new versions of Create React App are released, you can upgrade using a single command:</p>
-          <code>npm install react-scripts@latest</code>
-          <h3>Select packaging manager</h3>
-          <p>When you create a new app, the CLI will use npm or Yarn to install dependencies, depending on which tool you use to run create-react-app. For example:</p>
-          <code># Run this to use npm
-npx create-react-app my-app
-# Or run this to use yarn
-yarn create react-app my-app</code>
-<p>
-          To install React and MUI, you will need to use Node.js and its package manager, npm. Here are the steps you can follow:
-        </p>
+<div class="main">
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to the UI Dev Wiki! The purpose of this guide is to help UX and product designers learn and transition into the field of UI development.</p>
+        <p>As a UX designer interested in transitioning to UI development, you already have a strong foundation in user experience and design principles. This will be advantageous as you learn the technical aspects of web development. Here's a guide to get you started on your journey:</p>
         <ol>
-          <li>
-            Install Node.js: Visit the Node.js website (https://nodejs.org) and download and install the version that corresponds to your operating system. You will have to restart your computer.
-          </li>
-          <li>
-            Install npm and npx.
-            <code>
-              npm install -g npm
-            </code>
-          <li>
-            Create a new React app: Open a terminal and run the following command: npx create-react-app my-app
-          </li>
-          <li>
-            Navigate to the directory of your React app
-          </li>
-          <li>
-            Install React and start the server.
-          </li>
-          <p>
-            This will automatically open http://localhost:3000 in your default browser, and you will see your React app.
-          </p>
-          <p>
-            Start building your app: Open the project in your preferred code editor and start modifying the source files. The entry point of your app is src/index.js, and you can create new components in the src directory.
-          </p>
-          <p>Navigate to the directory of your React app by running:</p>
-          <ol>
             <li>
-              <code>cd my-app</code>
+                <h3>HTML (Hypertext Markup Language):</h3>
+                <p>HTML is the backbone of every web page. It defines the structure and content of your web documents. Learn HTML tags, elements, and attributes to create the skeleton of your web pages.</p>
             </li>
-              <ol>
-                <li>
-                  Navigate back a directory:
-                  <code>cd ..</code>
-                </li>
-                <li>
-                  Navigate forward:
-                  <code>cd {next directory}</code>
-                </li>
-              </ol>
-          </ol>
-                  
-   
-
-
-        </div>
-        <div id="folder_structure">
-          <header>Folder Structure</header>
-          <p>
-            The markup syntax you’ve seen above is called JSX. It is optional, but most React projects use JSX for its convenience. All of the tools we recommend for local development support JSX out of the box.
-          </p>
-        </div>
-        <div id="writing_markup_with_jsx">
-          <header>Writing Markup with JSX</header>
-          <p>
-            The markup syntax you’ve seen above is called JSX. It is optional, but most React projects use JSX for its convenience. All of the tools we recommend for local development support JSX out of the box.
-          </p>
-        </div>
-        <div id="adding_styles">
-          <header>Adding Styles</header>
-          <p>
-            In React, you specify a CSS class with className. It works the same way as the HTML class attribute.
-          </p>
-        </div>
-        <div id="updating_the_screen">
-          <header>Updating the Screen</header>
-          <p>
-            Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
-          </p>
-        </div>
-      </main>
-    </div>
-    <script src="index.js"></script>
-  </body>
-</html>
+            <li>
+                <h3>CSS (Cascading Style Sheets):</h3>
+                <p>CSS is used to style and visually enhance HTML elements. Study selectors, properties, and values to control the layout, typography, colors, and other visual aspects of your web pages.</p>
+            </li>
+            <li>
+                <h3>Responsive Design:</h3>
+                <p>Learn how to make your websites responsive to different screen sizes and devices. This involves using CSS media queries, flexible grids, and responsive units to ensure your designs adapt seamlessly.</p>
+            </li>
+            <li>
+                <h3>JavaScript:</h3>
+                <p>JavaScript is a programming language that adds interactivity and dynamic functionality to your web pages. Start with the basics, such as variables, data types, conditionals, loops, and functions. Then progress to more advanced concepts like DOM manipulation, event handling, and AJAX (Asynchronous JavaScript and XML).</p>
+            </li>
+            <li>
+                <h3>UI Frameworks and Libraries:</h3>
+                <p>Familiarize yourself with popular UI frameworks and libraries like Bootstrap, Foundation, or Material-UI. These frameworks provide pre-designed components, responsive grids, and CSS styling to expedite UI development.</p>
+            </li>
+            <li>
+                <h3>Version Control:</h3>
+                <p>Git is a widely used version control system that helps you track changes to your code. Learn the basics of Git, including creating repositories, committing changes, branching, merging, and collaborating with others using platforms like GitHub or GitLab.</p>
+            </li>
+            <li>
+                <h3>Web Accessibility:</h3>
+                <p>Ensure your websites are accessible to all users, regardless of disabilities. Study accessibility guidelines (e.g., WCAG) and learn how to implement accessible features like proper semantic HTML, alternative text for images, keyboard navigation, and ARIA (Accessible Rich Internet Applications) attributes.</p>
+            </li>
+            <li>
+                <h3>Build Tools and Task Runners:</h3>
+                <p>Familiarize yourself with build tools like npm (Node Package Manager) and task runners like Gulp or Grunt. These tools automate repetitive tasks, such as minifying and concatenating files, optimizing images, and managing dependencies.</p>
+            </li>
+            <li>
+                <h3>UI Design Tools:</h3>
+                <p>As a UX designer, you may already be familiar with design tools like Adobe XD, Sketch, or Figma. Continue using these tools to create UI mockups and design assets. Export assets in appropriate formats for development, such as SVGs, PNGs, or JPEGs.</p>
+            </li>
+            <li>
+                <h3>Continuous Learning and Practice:</h3>
+                <p>Web development is an ever-evolving field, so stay updated with the latest trends, technologies, and best practices. Engage in online communities, forums, and blogs. Practice by building real-world projects and experimenting with different UI designs and interactions.</p>
+            </li>
+        </ol>
+        <p>Remember, transitioning from UX design to UI development will require a blend of design skills and technical knowledge. By leveraging your existing UX expertise, you can create user-centered UIs that seamlessly merge aesthetics and functionality. Good luck with your journey into UI development!</p>
+    </section>
+    <section id="getting_started">
+        <h2>Getting Started</h2>
+        <p>If this is your first time learning code then I recommend going through prompts and courses through freecodeacademy.org. </p>
+        <p>If you are familiar with HTML and CSS and want to practice building websites then this guide might help you.</p>
+        <p>This webpage was built using HTML and CSS with just a bit of JavaScript. We will focus on HTML and CSS first and then dive into the basics of JavaScript.</p>
+        <p>Let's practice editing this webpage.</p>
+        <p>Right click anywhere on the page and select "Inspect." A menu will open revealing the HTML and CSS. In the top section it shows the HTML. Think of this as your layers. Your styles are in the bottom section of the menu.</p>
+    </section>
+    <section id="your_first_website">
+        <h2>Your First Website</h2>
+        <p>The first thing you will need to do is install Visual Studio Code or create a Github account. If you have any issues with either of those steps there are tutorials on their sites or you can ask ChatGPT for help.</p>
+        <p>VS Code is fairly similar to programs like Figma. You've got your "layers" on the left and your "canvas" in the middle. The left menu is your filing structure. You will need to create a dependency (a folder). Name it anything you wish. I named my dependency to create this webpage "dev-wiki." Now you will create two files: index.html and styles.css.</p>
+    </section>
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Here is a list of helpful resources that I used to learn and practice programming: </p>
+        <h3>Links to learn programming</h3>
+        <ul>
+            <li>
+                <p>https://www.w3schools.com/</p>
+                <p>W3 Schools is a helpful site to learn code. It's free and it provides a lot of tips and examples of different code.</p>
+            </li>
+            <li>
+                <p>https://www.freecodecamp.org/</p>
+                <p>Free Code Camp is of course free. This was probably the most helpful site to teach the basics very simply. It gives you different prompts to practice coding and also offers several certification courses.</p>
+            </li>
+            <li>
+                <p>codecademy.com</p>
+                <p>Codecademy offers some free courses, but other features are only available through a subscription.</p>
+            </li>
+            <li>
+                <p>coursera.org</p>
+                <p>Coursera has several courses for programming. Similar to Codecademy and Free Code Camp, they offer certification courses. However, only a few courses are free.</p>
+            </li>
+        </ul>
+        <h3>Other helpful links</h3>
+        <ul>
+            <li>
+                <p>github.com</p>
+            </li>
+            <li>
+                <p>codepen.io</p>
+            </li>
+            <li>
+                <p>react.dev</p>
+            </li>
+            <li>
+                <p>vuejs.org</p>
+            </li>
+        </ul>
+    </section>
+    
+</div>
+    
+<script src="/script.js"></script>
+</body>
+</html> 
